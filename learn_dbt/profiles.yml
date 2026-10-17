@@ -1,0 +1,11 @@
+learn_dbt:
+  outputs:
+    dev:
+      catalog: dbt_tutorial_dev
+      host: dbc-80b3523e-ac37.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/c715fb596cba74e9
+      schema: default
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+  target: dev
