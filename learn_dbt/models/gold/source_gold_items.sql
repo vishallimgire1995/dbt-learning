@@ -3,7 +3,7 @@ select
    *,
    row_number() over (partition by id order by update desc) as dedup
 from
-  {{ source('source', 'items') }}
+  {{ source('source', 'dim_items') }}
 )
 select
    id,
