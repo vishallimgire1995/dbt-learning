@@ -37,10 +37,10 @@ models:
       schema : bronze
     silver:
       +materialized: table
-      schema : bronze
+      schema : silver
     gold:
       +materialized: table
-      schema : bronze
+      schema : gold
 seeds:
   learn_dbt:
     schema: bronze
